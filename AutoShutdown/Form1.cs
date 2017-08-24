@@ -121,7 +121,7 @@ namespace AutoShutdown
             myProcess.StartInfo = startInfo;
             myProcess.Start();
             // myProcess.StandardInput.WriteLine("shutdown -s -t " + time);//自动关机
-            myProcess.StandardInput.WriteLine("shutdown -h");
+            myProcess.StandardInput.WriteLine("shutdown -h");//休眠
         }
     }
 }
